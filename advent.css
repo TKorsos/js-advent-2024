@@ -1,0 +1,47 @@
+:root {
+    --bg-clr: green;
+    --font-clr: white;
+    --cards-main-bg: black;
+    --cards-sub-bg: red;
+    --cards-main-size-w: 300px;
+    --cards-main-size-ratio: 2 / 3;
+    --cards-main-sub-w: 100%;
+    --cards-main-sub-h: 100%;
+    --cards-font-size: 3rem;
+}
+
+body {
+    background-color: var(--bg-clr);
+    color: var(--font-clr);
+    padding: 0;
+    margin: 0;
+}
+
+.advent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.cards-main {
+    background-color: var(--cards-main-bg);
+    width: var(--cards-main-size-w);
+    aspect-ratio: var(--cards-main-size-ratio);
+}
+
+.cards-sub {
+    background-color: var(--cards-sub-bg);
+    width: var(--cards-main-sub-w);
+    height: var(--cards-main-sub-h);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    font-size: var(--cards-font-size);
+    text-align: center;
+    word-break: break-all;
+}
